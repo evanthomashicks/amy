@@ -1,7 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams,LoadingController} from 'ionic-angular';
+import { NavController, NavParams,LoadingController, Platform} from 'ionic-angular';
 import { TwitterConnect, NativeStorage, Facebook} from 'ionic-native';
 import { UserPage } from '../user/user';
+import {
+  AngularFire, AuthProviders,
+  AuthMethods
+} from 'angularfire2';
 
 /*
   Generated class for the Login page.
@@ -16,14 +20,13 @@ import { UserPage } from '../user/user';
 
 export class LoginPage {
 
-  FB_APP_ID: number = 374731072899296;
-  public isFacebook: boolean = false;
-  public isTwitter: boolean = false;
-  
+  userProfile: any = null;
 
   constructor(public navCtrl: NavController, public navParams: NavParams
-  ,public loadingCtrl: LoadingController) {
-    Facebook.browserInit(this.FB_APP_ID, "v2.8");
+  ,public loadingCtrl: LoadingController,public af: AngularFire, platform: Platform) {
+     platform.ready().then(() => {
+      this.af = af;
+    });  
   }
 
   ionViewDidLoad() {
@@ -31,76 +34,23 @@ export class LoginPage {
 
   }
 
-  loginTwitter(){
-    let val = true;
-    let nav = this.navCtrl;
-    let loading = this.loadingCtrl.create({
-      content: 'Please wait...'
-    });
+  facebookLogin(){
+    Facebook.login(['email']).then( (response) => {
+        const facebookCredential = firebase.auth.FacebookAuthProvider
+            .credential(response.authResponse.accessToken);
 
-    loading.present();
-
-    //Request for login
-    TwitterConnect.login().then(function(result) {
-      //Get user data
-      TwitterConnect.showUser().then(function(user){
-        //Save the user data in NativeStorage
-        NativeStorage.setItem('user',
-        {
-          name: user.name,
-          userName: user.screen_name,
-          followers: user.followers_count,
-          picture: user.profile_image_url_https
-        }).then(function() {
-          nav.push(UserPage,{
-            isTwitter: this.isTwitter,
-            isFacebook: this.isFaceBook
-          });
+        firebase.auth().signInWithCredential(facebookCredential)
+        .then((success) => {
+            console.log("Firebase success: " + JSON.stringify(success));
+            this.userProfile = success;
         })
-      }, function(error){
-        loading.dismiss();
-      });
-    });
+        .catch((error) => {
+            console.log("Firebase failure: " + JSON.stringify(error));
+        });
+
+    }).catch((error) => { console.log(error) });
   }
 
-  loginFacebook(){
-    this.isFacebook = true;
-    console.log("loggin in useing Facebook");
-     let permissions = new Array();
-    let nav = this.navCtrl;
-    //the permissions your facebook app needs from the user
-    permissions = ["public_profile"];
-
-
-    Facebook.login(permissions)
-    .then(function(response){
-      let userId = response.authResponse.userID;
-      let params = new Array();
-
-      //Getting name and gender properties
-      Facebook.api("/me?fields=name,gender", params)
-      .then(function(user) {
-        user.picture = "https://graph.facebook.com/" + userId + "/picture?type=large";
-        //now we have the users info, let's save it in the NativeStorage
-        NativeStorage.setItem('user',
-        {
-          name: user.name,
-          gender: user.gender,
-          picture: user.picture
-        })
-        .then(function(){
-          nav.push(UserPage,{
-            isTwitter: this.isTwitter,
-            isFacebook: this.isFaceBook
-          });
-        }, function (error) {
-          console.log(error);
-        })
-      })
-    }, function(error){
-      console.log(error);
-    });
-  }
 
 
 }

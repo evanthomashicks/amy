@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "2.2.1",
     "@angular/platform-server": "2.2.1",
     "@ionic/storage": "1.1.7",
-    "angularfire2": "^2.0.0-beta.7",
+    "angularfire2": "^2.0.0-beta.8",
     "firebase": "^3.6.9",
     "ionic-angular": "2.0.1",
     "ionic-native": "2.4.1",
@@ -39,7 +39,15 @@
     "cordova-plugin-console",
     "cordova-plugin-device",
     "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
+    "ionic-plugin-keyboard",
+    {
+      "id": "cordova-plugin-facebook4",
+      "locator": "cordova-plugin-facebook4",
+      "variables": {
+        "APP_ID": "147486979101573",
+        "APP_NAME": "amywards"
+      }
+    }
   ],
   "cordovaPlatforms": [],
   "description": "amy-awards: An Ionic project"
