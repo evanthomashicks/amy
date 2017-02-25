@@ -13,6 +13,7 @@ import { ScholarshipPage } from '../pages/scholarship/scholarship';
 import { AboutamysPage } from '../pages/aboutamys/aboutamys';
 import { TheredpencilPage } from '../pages/theredpencil/theredpencil';
 import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermonies';
+import { SocialMediaPage } from '../pages/social-media/social-media';
 
 @Component({
   templateUrl: 'app.html'
@@ -33,7 +34,8 @@ export class MyApp {
       { title: 'Collegiate Scholarship', component: ScholarshipPage},
       { title: 'About AMA Atlanta', component: AboutamysPage},
       { title: 'The Red Pencil', component: TheredpencilPage},
-      { title: 'Master Of Cermonies', component: MasterofcermoniesPage}
+      { title: 'Master Of Cermonies', component: MasterofcermoniesPage},
+      { title: 'Social Media', component: SocialMediaPage}
     ];
 
   }

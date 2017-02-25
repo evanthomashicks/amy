@@ -12,6 +12,8 @@ import { ScholarshipPage } from '../pages/scholarship/scholarship';
 import { AboutamysPage } from '../pages/aboutamys/aboutamys';
 import { TheredpencilPage } from '../pages/theredpencil/theredpencil';
 import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermonies';
+// import { Twitterfeed } from '../providers/twitterfeed';
+import { SocialMediaPage } from '../pages/social-media/social-media';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,7 +26,9 @@ import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermon
     ScholarshipPage,
     AboutamysPage,
     TheredpencilPage,
-    MasterofcermoniesPage
+    MasterofcermoniesPage,
+    SocialMediaPage
+  
     
   ],
   imports: [
@@ -49,7 +53,9 @@ import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermon
     ScholarshipPage,
     AboutamysPage,
     TheredpencilPage,
-    MasterofcermoniesPage
+    MasterofcermoniesPage,
+    SocialMediaPage
+  
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
