@@ -12,8 +12,29 @@
     <ion-title>Social Media</ion-title>
   </ion-navbar>
 </ion-header>
-
-
 <ion-content padding>
-
+  <ion-refresher (ionRefresh)="loadTimeline($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-card *ngFor="let tweet of tweets">
+    <ion-item>
+      <ion-avatar item-left>
+        <img src="{{tweet.user.profile_image_url}}">
+      </ion-avatar>
+      <h2>{{tweet.user.name}}</h2>
+      <p>{{dateForTweet(tweet.created_at)}}</p>
+    </ion-item>
+    <img src="{{tweet.extended_entities.media[0].media_url}}" *ngIf="tweet.extended_entities">
+    <ion-card-content>
+      <p>{{tweet.text}}</p>
+    </ion-card-content>
+    <ion-row>
+      <ion-col *ngIf="tweet.entities.urls.length > 0">
+        <button ion-button clear small (click)="openLinkUrl(tweet.entities.urls[0].url)">
+          <ion-icon name="open"></ion-icon>
+          <div>Open Link</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>

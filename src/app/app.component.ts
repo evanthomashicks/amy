@@ -15,6 +15,7 @@ import { TheredpencilPage } from '../pages/theredpencil/theredpencil';
 import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermonies';
 import { SocialMediaPage } from '../pages/social-media/social-media';
 
+
 @Component({
   templateUrl: 'app.html'
 })
