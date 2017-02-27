@@ -16,6 +16,7 @@ import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermon
 import { SocialMediaPage } from '../pages/social-media/social-media';
 
 
+
 @Component({
   templateUrl: 'app.html'
 })

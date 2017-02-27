@@ -11,7 +11,8 @@ import { AboutamysPage } from '../pages/aboutamys/aboutamys';
 import { TheredpencilPage } from '../pages/theredpencil/theredpencil';
 import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermonies';
 import { SocialMediaPage } from '../pages/social-media/social-media';
-import { TwitterUtils } from '../providers/twitter-utils';
+import { JudgemodalPage } from '../pages/judgemodal/judgemodal';
+// import { TwitterUtils } from '../providers/twitter-utils';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,9 +25,7 @@ import { TwitterUtils } from '../providers/twitter-utils';
     TheredpencilPage,
     MasterofcermoniesPage,
     SocialMediaPage,
-    TwitterUtils
-  
-    
+    JudgemodalPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -50,9 +49,9 @@ import { TwitterUtils } from '../providers/twitter-utils';
     TheredpencilPage,
     MasterofcermoniesPage,
     SocialMediaPage,
-    TwitterUtils
+    JudgemodalPage
   
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler},TwitterUtils]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}

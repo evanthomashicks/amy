@@ -16,13 +16,16 @@
 
 <ion-content padding>
   <ion-list ion-item *ngFor="let j of judges" >
-    <ion-card>
+    <ion-card (click)="presentJudgeModal();">
       <ion-item>
         <ion-avatar item-left>
           <img src="{{j.pic}}">
         </ion-avatar>
         <h2>{{j.name}}</h2>
         <p>{{j.title}}</p>
+        <p>
+          {{j.descripion}}
+        </p>
       </ion-item>
       <ion-card-content>
 
