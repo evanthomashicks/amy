@@ -1,0 +1,144 @@
+<ion-header>
+ <ion-navbar>
+  <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+    <ion-title>Trivia Section</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+      How Long Has William Pate Hosted The AMYs? 
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_one">
+        <ion-option value="4">4 Years</ion-option>
+        <ion-option value="10">10 Years</ion-option>
+        <ion-option value="8">8 Years</ion-option>
+        <ion-option value="7">7 Years</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+      Where Were The AMY’s Held Before The College Football Hall Of Fame?  
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_two">
+        <ion-option value="1">At The Fabulous Fox Theatre</ion-option>
+        <ion-option value="2">At The Gathering Spot</ion-option>
+        <ion-option value="3">At The The Georgia Dome</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+      When Was The American Marketing Association Created?   
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_three">
+        <ion-option value="1937">1937</ion-option>
+        <ion-option value="1926">1926</ion-option>
+        <ion-option value="1934">1934</ion-option>
+        <ion-option value="1951">1951</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+     Who Were The Marketing Organizations That Combined To Form The American Marketing Association?    
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_four">
+        <ion-option value="1">National Association Of Marketing Teachers (NAMT)</ion-option>
+        <ion-option value="2">American Marketing Society (AMS)</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+     The Original Atlanta Chapter Name Started As The Georgia Chapter?     
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-toggle item-right checked="false" [(ngModel)]="answer_five">
+      </ion-toggle>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+      What Year Did The Georgia Chapter Start?     
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_six">
+        <ion-option value="1949">1949</ion-option>
+        <ion-option value="1945">1945</ion-option>
+        <ion-option value="1958">1958</ion-option>
+        <ion-option value="1960">1960</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+      Who Inspired The Creation Of The Executive Advisory Board For AMA Atlanta?      
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_seven">
+        <ion-option value="1">William Pate</ion-option>
+        <ion-option value="2">Don Dixon</ion-option>
+        <ion-option value="3">Dan Vargas</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-card-title style="text-align:center !important;">
+      How Many Chapters Are A part Of The American Marketing Association?    
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_eight">
+        <ion-option value="74">74</ion-option>
+        <ion-option value="50">50</ion-option>
+        <ion-option value="68">68</ion-option>
+        <ion-option value="85">85</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+    <ion-card>
+    <ion-card-title style="text-align:center !important;">
+      What The Name Is Of The AMA’s Flagship Publication?     
+    </ion-card-title>
+    <ion-item>
+      <ion-label>
+          Your Answer:
+      </ion-label>
+      <ion-select item-right [(ngModel)]="answer_eight">
+        <ion-option value="1">Marketing News</ion-option>
+        <ion-option value="2">The AMYs National Publication</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-card>
+</ion-content>

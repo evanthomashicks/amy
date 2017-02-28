@@ -21,7 +21,7 @@ export class ThejudgesPage {
       {
         id: 0,
         name: "Glen Caruso",
-        title:"Chief Revenue & Marketing Officer",
+        title:"Chief Revenue & Marketing Officer - UserIQ",
         pic: '../assets/pictures/judges/glencaruso.png',
         descripion: "Glen is an established entrepreneur, educator, and marketing automation & SaaS expert.  He's worked at leading digital media companies throughout his career and has helped launch and sell two technology startups. Currently, he's Chief Revenue Officer for UserIQ – a technology startup that’s part of the Advanced Technology Development Center located on the Georgia Institute of Technology campus.  UserIQ is a SaaS offering that acts as a Customer Growth Platform for other B2B SaaS companies. Glen’s background includes positions with Rocket Fuel, Gannett, BLiNQ Media, Tremor Video, TACODA, Microsoft/MSN, AOL, Disney Internet Group, Yahoo!, weather.com, Turner Broadcasting and JWT/NY. He's also Past President of the American Marketing Association and teaches Programmatic Advertising and Marketing Automation at the University of Georgia-Athens. Glen is a frequent speaker and moderator for business organizations and universities and talks about marketing innovation.  He’s also a former standup comedian."
       },
@@ -154,10 +154,15 @@ export class ThejudgesPage {
     console.log('ionViewDidLoad ThejudgesPage');
   }
 
-  presentJudgeModal(judgeId){
+  presentJudgeModal(judge){
     console.log("Opening judge modal");
-    console.log("Sending this judge to modal: " + judgeId);
-    let modal = this.modalCtrl.create( JudgemodalPage );
+    console.log("Sending this judge to modal: " + judge.name);
+    let modal = this.modalCtrl.create( JudgemodalPage, {
+      judgeName: judge.name,
+      judgeTitle: judge.title,
+      judgePic: judge.pic,
+      judgeDescription: judge.descripion
+    });
     modal.present();
   }
 

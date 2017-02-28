@@ -14,6 +14,10 @@ import { AboutamysPage } from '../pages/aboutamys/aboutamys';
 import { TheredpencilPage } from '../pages/theredpencil/theredpencil';
 import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermonies';
 import { SocialMediaPage } from '../pages/social-media/social-media';
+import { LivevoteingPage } from '../pages/livevoteing/livevoteing';
+import { TriviaPage } from '../pages/trivia/trivia';
+import { PresidentsletterPage } from '../pages/presidentsletter/presidentsletter';
+import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
 
 
 
@@ -37,7 +41,11 @@ export class MyApp {
       { title: 'About AMA Atlanta', component: AboutamysPage},
       { title: 'The Red Pencil', component: TheredpencilPage},
       { title: 'Master Of Cermonies', component: MasterofcermoniesPage},
-      { title: 'Social Media', component: SocialMediaPage}
+      { title: 'Social Media', component: SocialMediaPage},
+      { title: 'Live Voting', component: LivevoteingPage},
+      { title: 'Trivia Section', component: TriviaPage},
+      { title: 'Presidents Letter', component: PresidentsletterPage},
+      { title: 'AMY Sponsors', component: AmysponsorsPage}
     ];
 
   }

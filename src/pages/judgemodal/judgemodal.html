@@ -7,17 +7,25 @@
 <ion-header>
 
   <ion-navbar>
-    <button ion-button icon (click)="dismiss()">
+    <button ion-button icon-only style="color:black !important; background-color:white !important; box-shadow:0 !important;" (click)="dismiss()">
       <ion-icon name="md-close"></ion-icon>
     </button>
-    <ion-title>
-      
+    <ion-title style="text-align:center !important;">
     </ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
-<ion-content padding>
+<ion-content>
+  <ion-card style="width: 100% !important; margin:0 !important; ">
+    <ion-item>
+      <ion-avatar style="display: block !important; margin: 0 auto !important; padding-bottom:10px !important;">
+        <img src="{{judgePic}}">
+      </ion-avatar>
+      <h1 style="text-align:center !important;">{{judgeName}}</h1>
+      <p style="text-align:center !important;">{{judgeTitle}}</p>
+    </ion-item>
+  </ion-card>
+  <p padding>
+  {{judgeDescription}}
+  </p>
 
 </ion-content>

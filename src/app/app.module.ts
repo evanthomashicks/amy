@@ -12,6 +12,10 @@ import { TheredpencilPage } from '../pages/theredpencil/theredpencil';
 import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermonies';
 import { SocialMediaPage } from '../pages/social-media/social-media';
 import { JudgemodalPage } from '../pages/judgemodal/judgemodal';
+import { LivevoteingPage } from '../pages/livevoteing/livevoteing';
+import { TriviaPage } from '../pages/trivia/trivia';
+import { PresidentsletterPage } from '../pages/presidentsletter/presidentsletter';
+import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
 // import { TwitterUtils } from '../providers/twitter-utils';
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { JudgemodalPage } from '../pages/judgemodal/judgemodal';
     TheredpencilPage,
     MasterofcermoniesPage,
     SocialMediaPage,
-    JudgemodalPage
+    JudgemodalPage,
+    LivevoteingPage,
+    TriviaPage,
+    PresidentsletterPage,
+    AmysponsorsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -49,7 +57,11 @@ import { JudgemodalPage } from '../pages/judgemodal/judgemodal';
     TheredpencilPage,
     MasterofcermoniesPage,
     SocialMediaPage,
-    JudgemodalPage
+    JudgemodalPage,
+    LivevoteingPage,
+    TriviaPage,
+    PresidentsletterPage,
+    AmysponsorsPage
   
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
