@@ -12,19 +12,90 @@
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
-
-
-<ion-content padding>
-  <h1 style="text-align:center;">
-    6-7 - Happy Hour in Atrium	
-  </h1>
-  <h1 style="text-align:center;">
-    7-8 - tour College Football Hall of Fame	
-  </h1>
-  <h1 style="text-align:center;">
-    8-8:45 - the Half time show - Awards Ceremony on the Field		
-  </h1>
-  <h1 style="text-align:center;">
-    8:45- 10 pm the second half - drinks, desserts and netwroking.		
-  </h1>
+<ion-content>
+  <ion-card (click)="goToAgenda();">
+    <ion-card-title class="menu-title">
+      Agenda
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToSocial();">
+    <ion-card-title class="menu-title">
+      Social Feed Plug-Ins
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToVoting();">
+    <ion-card-title class="menu-title">
+      Live Voting	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToTrivia();">
+    <ion-card-title class="menu-title">
+      Trivia Section
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToPresidentsWelcome();">
+    <ion-card-title class="menu-title">
+      President's Welcome
+    </ion-card-title>
+  </ion-card>
+   <ion-card (click)="goToAboutAma();">
+    <ion-card-title class="menu-title">
+      About AMA Atlanta	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToMasterOfCermonies();">
+    <ion-card-title class="menu-title">
+      Master of Cermonies	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToJudges();">
+    <ion-card-title class="menu-title">
+      The Judges
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToScholarships();">
+    <ion-card-title class="menu-title">
+      Collegiate Scholarships	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToRedPencil();">
+    <ion-card-title class="menu-title">
+      The Red Pencil	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToAboutAmys();">
+    <ion-card-title class="menu-title">
+      About the AMYs 	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToAmyFinalist();">
+    <ion-card-title class="menu-title">
+      AMY Finalists 	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToMarketingForGood();">
+    <ion-card-title class="menu-title">
+      Marketing for Good Award 
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToLifeTimeAchievement();">
+    <ion-card-title class="menu-title">
+      	Lifetime Achievement Award 
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToMarketerOfTheYear();">
+    <ion-card-title class="menu-title">
+      	Corporate Marketer of the Year Award 
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToAgencyMarketerOfTheYear();">
+    <ion-card-title class="menu-title">
+      	Agency Marketer of the Year Award	
+    </ion-card-title>
+  </ion-card>
+  <ion-card (click)="goToSponsors();">
+    <ion-card-title class="menu-title">
+      	AMY Sponsors	
+    </ion-card-title>
+  </ion-card>
 </ion-content>

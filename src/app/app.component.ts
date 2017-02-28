@@ -18,6 +18,7 @@ import { LivevoteingPage } from '../pages/livevoteing/livevoteing';
 import { TriviaPage } from '../pages/trivia/trivia';
 import { PresidentsletterPage } from '../pages/presidentsletter/presidentsletter';
 import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
+import { AgendaPage } from '../pages/agenda/agenda'
 
 
 
@@ -45,7 +46,8 @@ export class MyApp {
       { title: 'Live Voting', component: LivevoteingPage},
       { title: 'Trivia Section', component: TriviaPage},
       { title: 'Presidents Letter', component: PresidentsletterPage},
-      { title: 'AMY Sponsors', component: AmysponsorsPage}
+      { title: 'AMY Sponsors', component: AmysponsorsPage},
+      { title: 'Agenda', component: AgendaPage}
     ];
 
   }

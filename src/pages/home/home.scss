@@ -1,3 +1,41 @@
 page-home {
+    .card-md {
+        margin: 10px 10px 10px 10px;
+        width: calc(100% - 20px);
+        height: 23%;
+        border-radius: 2px;
+        font-size: 1.4rem;
+        background: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
 
+    .card-title-md {
+        display: block;
+        font-size: 2.4rem;
+        padding-top: 60px;
+        text-align: center;
+        line-height: 1.2;
+        color: #222;
+        font-weight: bold;
+    }
+
+    .card-title-ios {
+        display: block;
+        font-size: 2.4rem;
+        padding-top: 60px;
+        text-align: center;
+        line-height: 1.2;
+        color: #222;
+        font-weight: bold;
+    }
+
+    .card-ios {
+         margin: 10px 10px 10px 10px;
+        width: calc(100% - 20px);
+        height: 23%;
+        border-radius: 2px;
+        font-size: 1.4rem;
+        background: #fff;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    }
 }

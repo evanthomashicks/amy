@@ -16,6 +16,8 @@ import { LivevoteingPage } from '../pages/livevoteing/livevoteing';
 import { TriviaPage } from '../pages/trivia/trivia';
 import { PresidentsletterPage } from '../pages/presidentsletter/presidentsletter';
 import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
+import { AgendaPage } from '../pages/agenda/agenda'
+
 // import { TwitterUtils } from '../providers/twitter-utils';
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
     LivevoteingPage,
     TriviaPage,
     PresidentsletterPage,
-    AmysponsorsPage
+    AmysponsorsPage,
+    AgendaPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -61,7 +64,8 @@ import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
     LivevoteingPage,
     TriviaPage,
     PresidentsletterPage,
-    AmysponsorsPage
+    AmysponsorsPage,
+    AgendaPage
   
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
