@@ -17,7 +17,12 @@ import { TriviaPage } from '../pages/trivia/trivia';
 import { PresidentsletterPage } from '../pages/presidentsletter/presidentsletter';
 import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
 import { AgendaPage } from '../pages/agenda/agenda'
-
+import { AboutamaPage } from '../pages/aboutama/aboutama';
+import { AmyfinalistsPage } from '../pages/amyfinalists/amyfinalists';
+import { MarketingforgoodPage } from '../pages/marketingforgood/marketingforgood';
+import { LifetimeachievementPage } from '../pages/lifetimeachievement/lifetimeachievement';
+import { CorporatemarketeroftheyearPage } from '../pages/corporatemarketeroftheyear/corporatemarketeroftheyear';
+import { AgencymarketeroftheyearPage } from '../pages/agencymarketeroftheyear/agencymarketeroftheyear';
 // import { TwitterUtils } from '../providers/twitter-utils';
 @NgModule({
   declarations: [
@@ -36,7 +41,13 @@ import { AgendaPage } from '../pages/agenda/agenda'
     TriviaPage,
     PresidentsletterPage,
     AmysponsorsPage,
-    AgendaPage
+    AgendaPage,
+    AboutamaPage,
+    AmyfinalistsPage,
+    MarketingforgoodPage,
+    LifetimeachievementPage,
+    CorporatemarketeroftheyearPage,
+    AgencymarketeroftheyearPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -65,7 +76,13 @@ import { AgendaPage } from '../pages/agenda/agenda'
     TriviaPage,
     PresidentsletterPage,
     AmysponsorsPage,
-    AgendaPage
+    AgendaPage,
+    AboutamaPage,
+    AmyfinalistsPage,
+    MarketingforgoodPage,
+    LifetimeachievementPage,
+    CorporatemarketeroftheyearPage,
+    AgencymarketeroftheyearPage
   
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

@@ -12,11 +12,21 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'livevoteing.html'
 })
 export class LivevoteingPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+ 
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LivevoteingPage');
+  }
+
+  seeDetails(){
+    console.log("Showing details for: ");
+  }
+  
+  castVote(){
+    console.log("Casting vote for: ");
   }
 
 }

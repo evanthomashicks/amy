@@ -2,7 +2,6 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 import { NativeStorage } from 'ionic-native';
-
 import { Page1 } from '../pages/page1/page1';
 import { Page2 } from '../pages/page2/page2';
 import { LoginPage } from '../pages/login/login';
@@ -19,6 +18,14 @@ import { TriviaPage } from '../pages/trivia/trivia';
 import { PresidentsletterPage } from '../pages/presidentsletter/presidentsletter';
 import { AmysponsorsPage } from '../pages/amysponsors/amysponsors';
 import { AgendaPage } from '../pages/agenda/agenda'
+import { AboutamaPage } from '../pages/aboutama/aboutama';
+import { AmyfinalistsPage } from '../pages/amyfinalists/amyfinalists';
+import { MarketingforgoodPage } from '../pages/marketingforgood/marketingforgood';
+import { LifetimeachievementPage } from '../pages/lifetimeachievement/lifetimeachievement';
+import { CorporatemarketeroftheyearPage } from '../pages/corporatemarketeroftheyear/corporatemarketeroftheyear';
+import { AgencymarketeroftheyearPage } from '../pages/agencymarketeroftheyear/agencymarketeroftheyear';
+
+
 
 
 
@@ -39,7 +46,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'The Judges', component: ThejudgesPage },
       { title: 'Collegiate Scholarship', component: ScholarshipPage},
-      { title: 'About AMA Atlanta', component: AboutamysPage},
+      { title: 'About AMYs', component: AboutamysPage},
       { title: 'The Red Pencil', component: TheredpencilPage},
       { title: 'Master Of Cermonies', component: MasterofcermoniesPage},
       { title: 'Social Media', component: SocialMediaPage},
@@ -47,7 +54,13 @@ export class MyApp {
       { title: 'Trivia Section', component: TriviaPage},
       { title: 'Presidents Letter', component: PresidentsletterPage},
       { title: 'AMY Sponsors', component: AmysponsorsPage},
-      { title: 'Agenda', component: AgendaPage}
+      { title: 'Agenda', component: AgendaPage},
+      { title: 'About AMA Atlanta', component: AboutamaPage},
+      { title: 'AMY Finalists', component: AmyfinalistsPage},
+      { title: 'Marketing For Good Award', component: MarketingforgoodPage},
+      { title: 'Life Time Achievement Award', component: LifetimeachievementPage},
+      { title: 'Corporate Marketer Of The Year', component: CorporatemarketeroftheyearPage},
+      { title: 'Agency Marketer Of The Year', component: AgencymarketeroftheyearPage }
     ];
 
   }
