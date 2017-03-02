@@ -16,6 +16,7 @@ import { MarketingforgoodPage } from '../marketingforgood/marketingforgood';
 import { LifetimeachievementPage } from '../lifetimeachievement/lifetimeachievement';
 import { CorporatemarketeroftheyearPage } from '../corporatemarketeroftheyear/corporatemarketeroftheyear';
 import { AgencymarketeroftheyearPage } from '../agencymarketeroftheyear/agencymarketeroftheyear';
+import { AboutamaPage } from '../aboutama/aboutama';
 
 /*
   Generated class for the Home page.
@@ -62,7 +63,7 @@ export class HomePage {
 
   goToAboutAma(){
     console.log("Going to about AMAs");
-    this.navCtrl.push(AboutamysPage);
+    this.navCtrl.push(AboutamaPage);
   }
 
   goToMasterOfCermonies(){

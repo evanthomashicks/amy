@@ -42,8 +42,8 @@ export class ThejudgesPage {
       {
         id:3,
         name:"Russ Davis",
-        title:"CMO- Rob Crew Marketing LLC",
-        pic:'assets/pictures/judges/robcrew.png',
+        title:"CMO- The YMCA of Metro Atlanta",
+        pic:'assets/pictures/russdavis.jpg',
         descripion:"The YMCA of Metro Atlanta is pleased to introduce Russ Davis as the chief marketing officer beginning June 1. In this role, he will lead the marketing strategy, programs and initiatives for the organization; enrich the member experience; build partner relationships; and foster awareness of the Y brand and impact throughout Atlanta. Previously, Russ was director of marketing and public relations for the Northside Hospital healthcare system. With more than 19 years of experience in marketing and communications at Northside, he was an integral member of the hospital’s leadership team. Russ provided strategic direction and oversight for all communications, marketing, advertising,  corporate partnerships, and alliances for three hospitals and more than 150 outpatient service  delivery locations. He was responsible for system-wide branding and served as the hospital’s official media spokesperson. He also was instrumentally involved in public affairs, government and community relations efforts. Before joining Northside Hospital, Russ was an account executive at GCI Group, an Atlanta public  relations firm. While there, he provided communications and public relations expertise to many of  Atlanta’s largest companies and corporate partners for the 1996 Centennial Olympic Games. In addition to his marketing and communications expertise, Russ brings a leadership style of  transparency, flexibility, strategic collaboration, and a commitment to achieving maximum results. As the CMO, he will support the organization’s overall goals and provide insight and offer strategic  communications solutions to the Y’s leadership team. “I am excited to be able to continue to use my marketing and communications skills for a purpose that  really matters,” says Russ. “I look forward to joining the Y, where improving lives and caring for others are at the heart of the mission.” Russ has a broad history of volunteer involvement and civic leadership. Currently, he is a Sandy Springs/Perimeter Chamber of Commerce board member and serves on the Mt. Bethel United Methodist Church administrative council. He is a 2014 graduate of Leadership Cobb and previously served on the Cobb Chamber’s board. He is a past board member of the Metro Atlanta Chapter of the American Red Cross and currently is a member of the Public Relations Society of America’s Georgia Chapter and the Atlanta Press Club. Russ grew up in the Atlanta suburbs. He earned a bachelor’s degree in communication arts from  Georgia Southern University where he was a founding father and charter member of the Pi Kappa  Alpha Fraternity’s Iota Upsilon Chapter. Russ and his wife, Leslie, live in Cobb County and have two sons and one daughter, Carson, Zachary and Harper, ages 11, 9 and 5. He and his family enjoy the outdoors, including: golf, boating, swimming, camping, gardening, and helping coach youth baseball."
       },
       {
@@ -92,7 +92,7 @@ export class ThejudgesPage {
         id:10,
         name:"Michael Kogon",
         title:"Brand Strategy & Creative Phase 3",
-        pic:'assets/pictures/judges/jones.png',
+        pic:'',
         descripion:""
       },
       {
@@ -106,7 +106,7 @@ export class ThejudgesPage {
         id:12,
         name:"William Pate",
         title:"Sr. Director, Content Center Lead for Georgia-Pacific",
-        pic:'assets/pictures/judges/neumann.png',
+        pic:'assets/pictures/williampate.jpg',
         descripion:""
       },
       {

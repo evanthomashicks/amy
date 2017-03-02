@@ -58,9 +58,6 @@ export class AmysponsorsPage {
         descripion:"Friendly Human provides persuasive storytelling for human centric brands. Leveraging the power of storytelling, we have the ability to craft narratives that move people to action. Whether working with agencies or clients, we believe remarkable people deserve to be celebrated.",
         linkToSite: ""
       },
-      
-
-
     ]
   }
 

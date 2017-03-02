@@ -1,3 +1,19 @@
 page-masterofcermonies {
-
+    .item-md ion-avatar ion-img, .item-md ion-avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .item-ios ion-avatar ion-img, .item-ios ion-avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+    }
 }
