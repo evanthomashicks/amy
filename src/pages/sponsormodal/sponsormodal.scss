@@ -1,0 +1,39 @@
+page-sponsormodal {
+    .item-md ion-avatar ion-img, .item-md ion-avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .item-ios ion-avatar ion-img, .item-ios ion-avatar img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .close-btn{
+        color:black !important; 
+        background-color:white !important; 
+        box-shadow:0 !important;
+    }
+
+    .align-center{
+        text-align:center !important;
+    }
+
+    .avatar-display{
+        display: block !important; 
+        margin: 0 auto !important; 
+        padding-bottom:10px !important;
+    }
+    .card-style{
+        width: 100% !important;
+        margin:0 !important; 
+    }
+}

@@ -14,8 +14,16 @@
 </ion-header>
 
 
-<ion-content padding>
-  <ion-list ion-item *ngFor="let s of sponsors">
-
-  </ion-list>
+<ion-content>
+    <ion-card (click)="presentJudgeModal(s);" *ngFor="let s of sponsors">
+      <ion-item>
+          <img src="{{s.pic}}">
+        <h2>{{s.name}}</h2>
+        <p>
+          {{s.descripion}}
+        </p>
+      </ion-item>
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
 </ion-content>

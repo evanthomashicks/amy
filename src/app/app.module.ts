@@ -12,6 +12,7 @@ import { TheredpencilPage } from '../pages/theredpencil/theredpencil';
 import { MasterofcermoniesPage } from '../pages/masterofcermonies/masterofcermonies';
 import { SocialMediaPage } from '../pages/social-media/social-media';
 import { JudgemodalPage } from '../pages/judgemodal/judgemodal';
+import { SponsormodalPage } from '../pages/sponsormodal/sponsormodal';
 import { LivevoteingPage } from '../pages/livevoteing/livevoteing';
 import { TriviaPage } from '../pages/trivia/trivia';
 import { PresidentsletterPage } from '../pages/presidentsletter/presidentsletter';
@@ -47,7 +48,8 @@ import { AgencymarketeroftheyearPage } from '../pages/agencymarketeroftheyear/ag
     MarketingforgoodPage,
     LifetimeachievementPage,
     CorporatemarketeroftheyearPage,
-    AgencymarketeroftheyearPage
+    AgencymarketeroftheyearPage,
+    SponsormodalPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -82,7 +84,8 @@ import { AgencymarketeroftheyearPage } from '../pages/agencymarketeroftheyear/ag
     MarketingforgoodPage,
     LifetimeachievementPage,
     CorporatemarketeroftheyearPage,
-    AgencymarketeroftheyearPage
+    AgencymarketeroftheyearPage,
+    SponsormodalPage
   
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]

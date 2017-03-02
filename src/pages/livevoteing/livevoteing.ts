@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
 import {AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'angularfire2';
+import * as localforage from "localforage";
+
 /*
   Generated class for the Livevoteing page.
 
@@ -12,7 +14,7 @@ import {AngularFire, FirebaseListObservable, FirebaseObjectObservable } from 'an
   templateUrl: 'livevoteing.html'
 })
 export class LivevoteingPage {
-  hasVoted: boolean = false;
+  hasVoted: boolean;
   voteButtonText: string = "Cast Vote";
   subFromDb: FirebaseObjectObservable<any>;
   firebaseSub: FirebaseListObservable<any>;
@@ -22,63 +24,19 @@ export class LivevoteingPage {
   public navCtrl: NavController, public navParams: NavParams,
   public af: AngularFire) {
     this.submissions= this.af.database.list('/submissions');
-
-    // this.submissions = [
-    //   {
-    //     id: 0,
-    //     title: "EcoLink",
-    //     pic:" ",
-    //     descripion:" ",
-    //     video:""
-    //   },
-    //   {
-    //     id: 1,
-    //     title:"Relish Marketing",
-    //     pic:" ",
-    //     descripion: " ",
-    //     video:""
-    //   },
-    //   {
-    //     id: 2,
-    //     title:"Inbox Pros",
-    //     pic:" ",
-    //     descripion: " ",
-    //     video:""
-    //   },
-    //   {
-    //     id: 3,
-    //     title:"Porsche Presents the Power 30 Under 30® Awards",
-    //     pic:" ",
-    //     descripion:" ",
-    //     video:""
-    //   },
-    //   {
-    //     id: 4,
-    //     title:"22Squared",
-    //     pic:" ",
-    //     descripion:" ",
-    //     video:""
-    //   },
-    //   {
-    //     id: 5,
-    //     title:"Terminus",
-    //     pic:" ",
-    //     descripion:" ",
-    //     video:""
-    //   },
-    //   {
-    //     id: 6,
-    //     title:"Definition 6- El Rey: LuchaYourself",
-    //     pic:" ",
-    //     descripion:" ",
-    //     video:""
-    //   }
-    // ]
+    // this.hasVoted = localforage.getItem('has_voted');
+    localforage.getItem("has_voted").then((result) => {
+        this.hasVoted = Boolean(result);
+        console.log("Has user voted yet?: " + this.hasVoted);
+    }, (error) => {
+        console.log("ERROR: ", error);
+    });
     
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LivevoteingPage');
+
   }
 
   seeDetails(){
@@ -104,6 +62,8 @@ export class LivevoteingPage {
         text: 'Submit Vote',
         handler: data => {
           this.hasVoted = true;
+          var voted_localForage = String(this.hasVoted);
+          localforage.setItem('has_voted', voted_localForage);
           this.addVotes(admissionKey,votes);
           // this.subFromDb = this.af.database.object(dbString, { preserveSnapshot: true });
           // // subscribe to db to get # of votes

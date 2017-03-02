@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only class="close-btn" (click)="dismiss()">
+      <ion-icon name="md-close"></ion-icon>
+    </button>
+    <ion-title class="align-center">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card class="card-style">
+    <ion-item>
+        <img src="{{sponsorPic}}">
+      <h1 class="align-center">{{sponsorName}}</h1>
+    </ion-item>
+  </ion-card>
+  <p padding>
+  {{sponsorDescription}}
+  </p>
+  <button ion-button block *ngIf="sponsorLink" href="sponsorLink" target="_blank">
+    Visit Sponsors Site
+  </button>
+
+
+</ion-content>
