@@ -12,8 +12,27 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'agencymarketeroftheyear.html'
 })
 export class AgencymarketeroftheyearPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  persons:Array<{name:string,title:string,
+  pic:string}>;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.persons = [
+      {
+        name: "Chris Arrendale",
+        title: "Inbox Pros",
+        pic: "assets/pictures/judges/chris.png"
+      },
+      {
+        name: "Kimm Lincoln",
+        title: "Nebo",
+        pic: "assets/pictures/judges/kimm.png"
+      },
+      {
+        name: "Mike Gustafson",
+        title: "Search Discovery",
+        pic: "assets/pictures/judges/mike.png"
+      }
+    ]
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AgencymarketeroftheyearPage');

@@ -50,7 +50,7 @@ export class MyApp {
       { title: 'The Red Pencil', component: TheredpencilPage},
       { title: 'Master Of Cermonies', component: MasterofcermoniesPage},
       { title: 'Social Media', component: SocialMediaPage},
-      { title: 'Live Voting', component: LivevoteingPage},
+      { title: 'Peoples Choice', component: LivevoteingPage},
       { title: 'Trivia Section', component: TriviaPage},
       { title: 'Presidents Letter', component: PresidentsletterPage},
       { title: 'AMY Sponsors', component: AmysponsorsPage},
