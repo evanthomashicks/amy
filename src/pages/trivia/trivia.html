@@ -7,6 +7,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
+
   <ion-card>
     <ion-card-title style="text-align:center !important;">
       How Long Has William Pate Hosted The AMYs? 
@@ -22,7 +23,38 @@
         <ion-option value="7">7 Years</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_one == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_one != 7 && answer_one != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+
   <ion-card>
     <ion-card-title style="text-align:center !important;">
       Where Were The AMY’s Held Before The College Football Hall Of Fame?  
@@ -32,12 +64,43 @@
           Your Answer:
       </ion-label>
       <ion-select item-right [(ngModel)]="answer_two">
-        <ion-option value="1">At The Fabulous Fox Theatre</ion-option>
+        <ion-option value="7">At The Fabulous Fox Theatre</ion-option>
         <ion-option value="2">At The Gathering Spot</ion-option>
         <ion-option value="3">At The The Georgia Dome</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_two == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_two != 7 && answer_two != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+
   <ion-card>
     <ion-card-title style="text-align:center !important;">
       When Was The American Marketing Association Created?   
@@ -47,13 +110,44 @@
           Your Answer:
       </ion-label>
       <ion-select item-right [(ngModel)]="answer_three">
-        <ion-option value="1937">1937</ion-option>
+        <ion-option value="7">1937</ion-option>
         <ion-option value="1926">1926</ion-option>
         <ion-option value="1934">1934</ion-option>
         <ion-option value="1951">1951</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_three == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_three != 7 && answer_three != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+
   <ion-card>
     <ion-card-title style="text-align:center !important;">
      Who Were The Marketing Organizations That Combined To Form The American Marketing Association?    
@@ -63,11 +157,42 @@
           Your Answer:
       </ion-label>
       <ion-select item-right [(ngModel)]="answer_four">
-        <ion-option value="1">National Association Of Marketing Teachers (NAMT)</ion-option>
+        <ion-option value="7">National Association Of Marketing Teachers (NAMT)</ion-option>
         <ion-option value="2">American Marketing Society (AMS)</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_four == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_four != 7 && answer_four != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+  
   <ion-card>
     <ion-card-title style="text-align:center !important;">
      The Original Atlanta Chapter Name Started As The Georgia Chapter?     
@@ -76,10 +201,43 @@
       <ion-label>
           Your Answer:
       </ion-label>
-      <ion-toggle item-right checked="false" [(ngModel)]="answer_five">
-      </ion-toggle>
+      <ion-select item-right [(ngModel)]="answer_five">
+        <ion-option value="7">True</ion-option>
+        <ion-option value="2">False</ion-option>
+      </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_five == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_five != 7 && answer_five != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+
   <ion-card>
     <ion-card-title style="text-align:center !important;">
       What Year Did The Georgia Chapter Start?     
@@ -89,13 +247,44 @@
           Your Answer:
       </ion-label>
       <ion-select item-right [(ngModel)]="answer_six">
-        <ion-option value="1949">1949</ion-option>
+        <ion-option value="7">1949</ion-option>
         <ion-option value="1945">1945</ion-option>
         <ion-option value="1958">1958</ion-option>
         <ion-option value="1960">1960</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_six == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_six != 7 && answer_six != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+
   <ion-card>
     <ion-card-title style="text-align:center !important;">
       Who Inspired The Creation Of The Executive Advisory Board For AMA Atlanta?      
@@ -107,10 +296,41 @@
       <ion-select item-right [(ngModel)]="answer_seven">
         <ion-option value="1">William Pate</ion-option>
         <ion-option value="2">Don Dixon</ion-option>
-        <ion-option value="3">Dan Vargas</ion-option>
+        <ion-option value="7">Dan Vargas</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_seven == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_seven != 7 && answer_seven != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+
   <ion-card>
     <ion-card-title style="text-align:center !important;">
       How Many Chapters Are A part Of The American Marketing Association?    
@@ -120,25 +340,86 @@
           Your Answer:
       </ion-label>
       <ion-select item-right [(ngModel)]="answer_eight">
-        <ion-option value="74">74</ion-option>
+        <ion-option value="7">74</ion-option>
         <ion-option value="50">50</ion-option>
         <ion-option value="68">68</ion-option>
         <ion-option value="85">85</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_eight == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_eight != 7 && answer_eight != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
+
     <ion-card>
-    <ion-card-title style="text-align:center !important;">
-      What The Name Is Of The AMA’s Flagship Publication?     
-    </ion-card-title>
+      <ion-card-title style="text-align:center !important;">
+        What The Name Is Of The AMA’s Flagship Publication?     
+      </ion-card-title>
     <ion-item>
       <ion-label>
           Your Answer:
       </ion-label>
-      <ion-select item-right [(ngModel)]="answer_eight">
-        <ion-option value="1">Marketing News</ion-option>
+      <ion-select item-right [(ngModel)]="answer_nine">
+        <ion-option value="7">Marketing News</ion-option>
         <ion-option value="2">The AMYs National Publication</ion-option>
       </ion-select>
     </ion-item>
+    <div class="right-answer" *ngIf="answer_nine == 7">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="right-txt">
+              YOU GOT IT RIGHT!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-right" name="md-checkmark-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+    <div class="wrong-answer" *ngIf="answer_nine != 7 && answer_nine != 0">
+      <ion-grid>
+        <ion-row>
+          <ion-col width-75>
+            <div class="wrong-txt">
+              WRONG ANSWER!
+            </div>
+          </ion-col>
+          <ion-col width-25> 
+            <ion-icon class="icon-wrong" name="md-close-circle">
+            </ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
   </ion-card>
 </ion-content>

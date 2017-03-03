@@ -28,9 +28,14 @@ export class SponsormodalPage {
       this.sponsorDescription = this.navParams.get('sponsorDescription');
       this.sponsorLink = this.navParams.get('sponsorLink');
   }
-    dismiss(){
+  
+  dismiss(){
     console.log("Dismissing judge modal");
     this.viewCtrl.dismiss();
+  }
+
+  launchUrl(sponsorsUrl){
+  
   }
 
 }

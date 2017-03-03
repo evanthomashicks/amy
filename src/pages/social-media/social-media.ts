@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { NavController, AlertController,
 LoadingController, Loading, ToastController } from 'ionic-angular';
 import { Http } from '@angular/http';
-// import { TwitterUtils } from '../../providers/twitter-utils';
 import { InAppBrowser,TwitterConnect } from 'ionic-native';
+import { TwitterService } from 'ng2-twitter';
+
 
 
 /*
@@ -17,15 +18,36 @@ import { InAppBrowser,TwitterConnect } from 'ionic-native';
   templateUrl: 'social-media.html'
 })
 export class SocialMediaPage {
-  loading: Loading;
-  tweets = [];
+  title = 'app works!';
+  result = '';
   constructor(public navCtrl: NavController,
   private loadingCtrl: LoadingController,private toastCtrl: ToastController,
-  private alertCtrl: AlertController) {
-    // , public twitterUtils: TwitterUtils
-
+  private alertCtrl: AlertController,
+  public twitter: TwitterService) {
 
   }
+
+  //   getHomeTimeline(){
+  //     this.twitter.get(
+  //       'https://api.twitter.com/1.1/search/tweets.json?q=%23amyawards',
+  //       {
+  //         count: 5
+  //       },
+  //       {
+  //         consumerKey: 'PjVsfSRwUq0k9X5bemcpMKNC5',
+  //         consumerSecret: 'zN3903Az3ImT7svTTikii5XEmpB5Thns6GyIqfYftHKpRUVv0V'
+  //       },
+  //       {
+  //         token: '40990530-j5heoBQQq0KBWQ6yt52r2teSde3PJ1sxysQwQCNFH',
+  //         tokenSecret: 'V1PyWy3MsJeTKcPMEFrfaMzYEQgx0jcokbXYt2CayLjva'
+  //       }
+  //   ).subscribe((res)=>{
+  //       this.result = res.json().map(tweet => tweet.text);
+  //       console.log(this.result);
+  //   });
+  // }
+
+
   // public loginWithTwitter() {
   //   this.showLoading();
   //   TwitterConnect.login().then((data) => {

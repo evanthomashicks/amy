@@ -12,29 +12,7 @@
     <ion-title>Social Media</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
-  <ion-refresher (ionRefresh)="loadTimeline($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
-  <ion-card *ngFor="let tweet of tweets">
-    <ion-item>
-      <ion-avatar item-left>
-        <img src="{{tweet.user.profile_image_url}}">
-      </ion-avatar>
-      <h2>{{tweet.user.name}}</h2>
-      <p>{{dateForTweet(tweet.created_at)}}</p>
-    </ion-item>
-    <img src="{{tweet.extended_entities.media[0].media_url}}" *ngIf="tweet.extended_entities">
-    <ion-card-content>
-      <p>{{tweet.text}}</p>
-    </ion-card-content>
-    <ion-row>
-      <ion-col *ngIf="tweet.entities.urls.length > 0">
-        <button ion-button clear small (click)="openLinkUrl(tweet.entities.urls[0].url)">
-          <ion-icon name="open"></ion-icon>
-          <div>Open Link</div>
-        </button>
-      </ion-col>
-    </ion-row>
-  </ion-card>
-</ion-content>
+<body>
+  <a class="twitter-timeline"  href="https://twitter.com/hashtag/amyawards2017" data-widget-id="837781109337436160">#amyawards2017 Tweets</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>     
+</body>

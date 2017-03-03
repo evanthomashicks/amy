@@ -24,6 +24,7 @@ import { MarketingforgoodPage } from '../pages/marketingforgood/marketingforgood
 import { LifetimeachievementPage } from '../pages/lifetimeachievement/lifetimeachievement';
 import { CorporatemarketeroftheyearPage } from '../pages/corporatemarketeroftheyear/corporatemarketeroftheyear';
 import { AgencymarketeroftheyearPage } from '../pages/agencymarketeroftheyear/agencymarketeroftheyear';
+import { TwitterService } from 'ng2-twitter';
 // import { TwitterUtils } from '../providers/twitter-utils';
 @NgModule({
   declarations: [
@@ -88,6 +89,6 @@ import { AgencymarketeroftheyearPage } from '../pages/agencymarketeroftheyear/ag
     SponsormodalPage
   
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}, TwitterService]
 })
 export class AppModule {}
